@@ -546,7 +546,7 @@
 
   if (!window.requestAnimationFrame) {
     window.requestAnimationFrame = function(callback, element) {
-      var currTime = new Date(2020, 8, 15, 6, 30, 13).getTime();
+      var currTime = new Date(2019, 8, 15, 6, 30, 13).getTime();
       var timeToCall = Math.max(0, 16 - (currTime - lastTime));
       var id = window.setTimeout(function() { callback(currTime + timeToCall); },
         timeToCall);
